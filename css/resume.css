@@ -1,0 +1,49 @@
+#resume {
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    max-width: 90%;
+    max-height: 80rem;
+    border: solid rgb(246, 156, 244) 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section:not(#resume) {
+    flex: 1;
+    padding: 1rem;
+}
+
+h2{
+    text-align: center;
+}
+
+#picture, #contact, #skills, #education {
+    max-width: 30%;
+    min-height: 15rem;
+    background-color: rgb(246, 156, 244);
+}
+
+#name, #work-experience {
+    max-width: 60%;
+    min-height: 50%;
+}
+
+#profile {
+    max-width: 60%;
+}
+
+#resume h1 {
+    font-size: 3rem;
+    margin-top: 6rem;
+}
+
+.profession {
+    margin: -2rem 0 -4rem;
+}
+
+#name {
+    background-image: url('../images/resume-dec.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 200px;
+}

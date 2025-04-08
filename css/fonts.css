@@ -1,0 +1,54 @@
+@font-face {
+  font-family: khiarascript;
+  src: url('../fonts/khiara_script/©\ 2020\ NUGS\ Project\ Khiara\ Script.ttf');
+}
+
+@font-face {
+  font-family: quaylike;
+  src: url('../fonts/quaylike/Quaylike.otf');
+}
+
+@font-face {
+  font-family: blackbones;
+  src: url('../fonts/black_bones/Black\ Bones\ Personal\ Use\ Only.ttf');
+}
+
+@font-face {
+  font-family: breathing;
+  src: url('../fonts/breathing/Breathing\ Personal\ Use\ Only.ttf');
+}
+
+@font-face {
+  font-family: feelingpassionate;
+  src: url('../fonts/feeling_passionate/Feeling\ Passionate\ Personal\ Use\ Only.ttf');
+}
+
+.shadow {
+  font-family: khiarascript;
+  font-size: 6rem;
+  color: black;
+  text-shadow: .1rem .1rem rgb(255, 205, 242), 
+  .2rem .2rem rgb(189, 9, 177);
+  padding: 2rem;
+}
+
+.quaylike {
+    font-family: quaylike;
+    font-size: 3.5rem;
+    padding-bottom: 0;
+}
+
+.breathing {
+  font-family: breathing;
+  font-size: 3.5rem;
+}
+
+.project {
+  font-family: blackbones;
+  font-size: 4.5rem;
+}
+
+.passionate {
+  font-family: feelingpassionate;
+  font-size: 3.5rem;
+}

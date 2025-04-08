@@ -1,0 +1,93 @@
+article, aside {
+    max-width: 90%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: .5rem;
+}
+
+#terms {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 90%;
+}
+
+div:not(#address) {
+    border: 3px solid black;
+    flex: 3;
+    padding: 1rem;
+    margin: 0.5rem;
+    min-width: 200px;
+}
+
+div:target{
+    box-shadow: 0 0 1.5rem rgb(255, 0, 238);
+    background-color: rgb(255, 237, 254);
+}
+
+#sidenav {
+    background: white;
+    border: solid black 3px;
+    max-height: 32rem;
+    max-width: 9rem;
+    position: fixed;
+    margin: 1rem -0.5rem;
+    padding: 1rem;
+}
+
+#sidenav a {
+    color: black;
+    display: block;
+    padding: .3rem;
+    text-decoration: none;
+}
+
+#term3, #term5, #term7 {
+    min-width: 45%;
+}
+
+#terms img {
+    width: 100%;
+}
+
+.schoolbook {
+    float: right;
+    width: 60%;
+}
+
+.mala {
+    float: left;
+    width: 40%;
+}
+
+.text {
+    padding: 1rem;
+}
+
+aside img {
+    width: 45%;
+    padding: 1rem;
+}
+
+.arngren {
+    float: right;
+    width: 70%;
+    padding: 1rem;
+}
+
+.home {
+    float: left;
+    width: 70%;
+    padding: 1.5rem 1.5rem 1rem;
+}
+
+.pet{
+    width: 100%;
+}

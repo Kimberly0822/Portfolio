@@ -1,0 +1,133 @@
+article {
+    max-width: 90%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: .5rem;
+}
+
+#terms {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 90%;
+}
+
+div:not(#address) {
+    border: 3px solid black;
+    flex: 3;
+    padding: 1rem;
+    margin: 0.5rem;
+    min-width: 200px;
+}
+
+.wheel {
+    float: right;
+    width: 50%;
+    margin-bottom: -1rem;
+    transform: translateY(-10px);
+}
+
+.palette {
+    width: 70%;
+    transform: translateX(22%);
+    margin-bottom: auto;
+}
+
+.bigpalette {
+    width: 35%;
+    transform: translateX(92%);
+}
+
+#term3, #term6, #term10, #term13, #term16, #term18 {
+    min-width: 45%;
+}
+
+#term1, #term5, #term9 {
+    min-width: 60%;
+}
+
+#term12 {
+    min-width: 90%;
+}
+
+div:target{
+    box-shadow: 0 0 1.5rem rgb(255, 0, 238);
+    background-color: rgb(255, 237, 254);
+}
+
+#sidenav {
+    background: white;
+    border: solid black 3px;
+    max-height: 32rem;
+    max-width: 9rem;
+    position: fixed;
+    margin: 1rem -0.5rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+#sidenav a {
+    color: black;
+    display: block;
+    padding: .3rem;
+    text-decoration: none;
+}
+
+table {
+    width: 90%;
+}
+
+table,
+th,
+td {
+    border: solid black 3px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+thead {
+    font-size: x-large;
+    background-color: rgb(255, 58, 216);
+}
+
+tbody td:first-child {
+    text-align: center;
+    width: 20%;
+}
+
+tbody td:last-child {
+    padding: 0 2rem;
+    width: 40%;
+}
+
+td img {
+    display: block;
+    margin: auto;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(255, 222, 248);
+}
+
+.revival {
+    float: right;
+    max-width: 70%;
+    padding: 1rem;
+}
+
+.astronaut {
+    float: left;
+    max-width: 70%;
+    padding: 1.5rem 1.5rem 0 1rem;
+}
+
+.flying {
+    width: 100%;
+}

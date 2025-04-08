@@ -3,44 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
   <title>My Portfolio!</title>
 </head>
 <body>
 <header>
-    <h1>Showcase</h1>
-    <nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li class="contains"><a href="showcase.html">Showcase</a>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="showcase.html">Showcase</a></li>
-          <li><a href="color-overview.html">Color Theory</a></li>
-          <li><a href="typography-overview.html">Typography</a></li>
+            <li><a href="restoration.html">Restoration</a></li>
+            <li><a href="magazine.html">Magazine</a></li>
+            <li><a href="company.html">Company Ad</a></li>
+            <li><a href="gametitle.html">Video Game Title Sceen</a></li>
+            <li><a href="psad.html">PlayStation Ad</a></li>
+            <li><a href="character.html">Character Animation</a></li>
         </ul>
-      </nav>
+      </li>
+      <li class="contains"><a href="color-overview.html">Color Theory</a>
+        <ul>
+          <li><a href="color-themes.html">Themes</a></li>
+          <li><a href="color-article.html">Color Theory Tips</a></li>
+        </ul>
+      </li>
+      <li class="contains"><a href="typography-overview.html">Typography</a>
+        <ul>
+          <li><a href="font-article.html">Fonts</a></li>
+          <li><a href="typography-article.html">Typography Tips</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </header>
 <main>
-  <h2>My Projects!</h2>
-  <nav>
+  <h5 class="project">My Projects!</h5>
     <div>
-      <a href="restoration.html">Restoration</a> |
-      <a href="magazine.html">Magazine</a> |
-      <a href="company.html">Company Ad</a> |
-      <a href="gametitle.html">Video Game Title Sceen</a> |
-      <a href="psad.html">PlayStation Ad</a> |
-      <a href="character.html">Character Animation</a> |
+    <img src="images/ramen-ad.png" class="center" alt="Ramen Ad">
     </div>
-  </nav>
-  <section id="pictures">
-    <h3>Logo</h3>
-    <img src="images/logo.png" alt="Company Logo" height="500" width="500">
-    <h3>Advertisment</h3>
-    <img src="images/ramen-ad.png" alt="Ramen Ad" height="230" width="700">
-    <h3>Business Card Front</h3>
-    <img src="images/cardfront.png" alt="Front of Business Card" height="330" width="570">
-    <h3>Business Card Back</h3>
-     <img src="images/cardback.png" alt="Back of Business Card" height="330" width="570">
-  </section>
-  <section id="description">
+  <div class="notes">
+    <h2>Notes</h2>
     <p>For this project I put my drawing skills to the test. I was to make a logo, ad, and business card for a fake company. One of my
       favorite flowers are cherry blossoms and I love ramen so much. So I thought "Why not use those to make my project?" And now you
       can see the results of all my hard work! I hope you enjoy :D</p>
@@ -66,15 +72,23 @@
         </ul>
       </li>
     </ul>
+    </div>
+  <section id="work">
+    <div>
+    <h3>Business Card Front</h3>
+    <img src="images/cardfront.png" alt="Front of Business Card">
+    </div>
+    <div>
+    <h3>Business Card Back</h3>
+     <img src="images/cardback.png" alt="Back of Business Card">
+     </div>
   </section>
 </main>
 <footer>
-  <hr>
   <section id="address">
-    <div>
-      (210) 619-0112 |
-      Fakeemail@gmail.com
-    </div>
+        <i class="fa-solid fa-phone"></i> (210) 619-0112 |
+        <i class="fa-solid fa-envelope"></i> Fake_email@gmail.com |
+        <i class="fa-brands fa-twitter"></i> @fake-twitter-handle
   </section>
 </footer>
 </body>

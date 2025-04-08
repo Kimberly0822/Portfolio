@@ -1,0 +1,37 @@
+#work, #everything, .center {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 90%;
+}
+
+div:not(#address) {
+    flex: 1;
+    padding: 0rem 1rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+div img, div video {
+    max-width: 100%;
+}
+
+.notes {
+    border: solid black 2px;
+}
+
+.before, .after {
+    transform: translateY(-20px);
+}
+
+.cover {
+    transform: translateX(-20px);
+}
+
+.center {
+    padding-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+}

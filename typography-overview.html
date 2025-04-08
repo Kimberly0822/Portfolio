@@ -3,130 +3,171 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/typography.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
   <title>My Portfolio!</title>
 </head>
 <body>
 <header>
-    <h1>My Portfolio</h1>
     <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="showcase.html">Showcase</a></li>
-          <li><a href="color-overview.html">Color Theory</a></li>
-          <li><a href="typography-overview.html">Typography</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li class="contains"><a href="showcase.html">Showcase</a>
+                <ul>
+                    <li><a href="restoration.html">Restoration</a></li>
+                    <li><a href="magazine.html">Magazine</a></li>
+                    <li><a href="company.html">Company Ad</a></li>
+                    <li><a href="gametitle.html">Video Game Title Sceen</a></li>
+                    <li><a href="psad.html">PlayStation Ad</a></li>
+                    <li><a href="character.html">Character Animation</a></li>
+                </ul>
+            </li>
+            <li class="contains"><a href="color-overview.html">Color Theory</a>
+                <ul>
+                    <li><a href="color-themes.html">Themes</a></li>
+                    <li><a href="color-article.html">Color Theory Tips</a></li>
+                </ul>
+            </li>
+            <li class="contains"><a href="typography-overview.html">Typography</a>
+                <ul>
+                    <li><a href="font-article.html">Fonts</a></li>
+                    <li><a href="typography-article.html">Typography Tips</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </header>
-<main>
+<section id="sidenav">
     <nav>
-        <div>
-            <a href="font-article.html">Fonts</a> |
-            <a href="typography-article.html">Typography Tips</a> |
-        </div>
+        <ul>
+            <h3>Typeface vs Font</h3>
+            <li><a href="#term1">Typeface</a></li>
+            <li><a href="#term2">Font</a></li>
+            <h3>The Different Typefaces</h3>
+            <li><a href="#term3">Serif</a></li>
+            <li><a href="#term4">Sans-Serif</a></li>
+            <li><a href="#term5">Script</a></li>
+            <li><a href="#term6">Monospaced</a></li>
+            <li><a href="#term7">Handwritten</a></li>
+            <li><a href="#term8">Decorative</a></li>
+            <h3>Layout Techniques</h3>
+            <li><a href="#term9">Single Column</a></li>
+            <li><a href="#term10">Multi Column</a></li>
+        </ul>
     </nav>
-    <section id="terms">
-    <h1>Typography</h1>
+</section>
+<main>
+    <h5 class="passionate">Typography</h5>
     <p>Many think typography is just choosing a font that looks nice but it's much more than that. It's the art and technique of
         arranging your text to be legible, readable and appealing to the user. While just choosing a typeface is the bulk of this
         there are many other things that can aid you in your endeavor to make an attractive and legible site. Some things you can do
         is change the point size, line length, line spacing, letter spacing, or the spaces between pairs of letters. As you can see
         typography is much more complex than most think so let's get into some basic terms that might help you on your journey</p>
-    <h2>Typeface vs Font</h2>
-    <ul>
-        <li>Typeface
+    <h1>Typeface vs Font</h1>
+    <section id="terms">
+        <div id="term1">
+        <h2>Typeface</h2>
             <ul>
                 <li>As it turns out many confuse the word typeface for the word font and as it turns out I was one of those people.
                     So typeface is really just what people thought font was. It's a set of design features or in other words the style
                     the letters and other characters take when used</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/diff-typefaces.png" alt="Different Typefaces" height="200" width="240">
-        <li>Font
+        <img src="images/typography-pics/diff-typefaces.png" alt="Different Typefaces">
+        </div>
+        <div id="term2">
+        <h2>Font</h2>
             <ul>
                 <li>So now we have a bit of a dilemma. If font isn't what we thought it was, what exactly is font? To put it simply, font
                     is basically a subset of a typeface. When you choose a typeface it can have different sizes or styles or weights. Such
                     as being italicized or bold, point 18 or point 24. Each of these different versions is called a font</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/bookman-text.png" alt="Different Fonts" height="140" width="370">
-    </ul>
-    <h2>The Different Typefaces</h2>
-    <ul>
-        <li>Serif
+        <img src="images/typography-pics/bookman-text.png" alt="Different Fonts">
+        </div>
+    </section>
+    <h1>The Different Typefaces</h1>
+    <section id="terms">
+        <div id="term3">
+        <h2>Serif</h2>
             <ul>
                 <li>The serif typeface is more traditional in appearance and can be distinguished from others by small decorative lines, or
                     "feet", that extend out from the ends of characters. Serif is used particulary useful in printed and text heavy writings
                     for its readability and for how it guides the reader's eyes along the lines of text</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/serif.png" alt="Serif Typefaces" height="160" width="280">
-        <li>Sans-Serif
+        <img src="images/typography-pics/serif.png" alt="Serif Typefaces">
+        </div>
+        <div id="term4">
+        <h2>Sans-Serif</h2>
             <ul>
                 <li>The sans-serif typeface is identified by its clean and unadorned look. So unlike the serif tpyefaces there are no "feet"
                     on the characters. Sans-serif offers a more simple and clean look so is widely used in digital media but because of its
                     high versatility they are quite useful in print as well</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/sans-serif.png" alt="Sans-Serif Typefaces" height="180" width="250">
-        <li>Script
+        <img src="images/typography-pics/sans-serif.png" alt="Sans-Serif Typefaces">
+        </div>
+        <div id="term5">
+        <h2>Script</h2>
             <ul>
                 <li>Script typeface tends to mimic the fluidity of calligraphy with connected characters and looping strokes. Because
                     of this they are more often used for more formal things like invitations. However even though script looks nice they
                     aren't very suited for body text because the many swooping lines can make it difficult to read when made smaller</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/script.png" alt="Script Typefaces" height="170" width="260">
-        <li>Monospaced
+        <img src="images/typography-pics/script.png" alt="Script Typefaces">
+        </div>
+        <div id="term6">
+        <h2>Monospaced</h2>
             <ul>
                 <li>Monospaced characters all occupy the same horizontal space. Often used in typewriters and coding these typefaces
                     ensure uniformity making them great for jobs where text alignment is important</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/monospace.png" alt="Monospace Typefaces" height="150" width="300">
-        <li>Handwritten
+        <img src="images/typography-pics/monospace.png" alt="Monospace Typefaces">
+        </div>
+        <div id="term7">
+        <h2>Handwritten</h2>
             <ul>
                 <li>Handwritten is similar to script where many have swooping lines but it often adds the slight imperfections a person's
                     hand might give text. This typeface is useful for when you wanna add a more personal touch to whatever it is you're
                     making. But like with script because of it's intricate nature it isn't great for body text as it's legibilty decreases</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/handwritten.png" alt="Handwritten Typefaces" height="170" width="370">
-        <li>Decorative
+        <img src="images/typography-pics/handwritten.png" alt="Handwritten Typefaces">
+        </div>
+        <div id="term8">
+        <h2>Decorative</h2>
             <ul>
                 <li>Decorative, or display typefaces, are fun eye catching typefaces that can range from playful or witty to futuristic 
                     or maybe even nostalgic. These are great as attention grabbers for use as logos or special text in advertisments.
                     While fun their use should be limited so as not to distract and impact user readability</li>
             </ul>
-        </li>
-        <img src="images/typography-pics/decorative.png" alt="Decorative Typefaces" height="200" width="300">
-    </ul>
-    <h2>Layout Techniques</h2>
-    <ul>
-        <li>Single Column
+        <img src="images/typography-pics/decorative.png" alt="Decorative Typefaces">
+        </div>
+    </section>
+    <h1>Layout Techniques</h1>
+    <section id="terms">
+        <div id="term9">
+        <h2>Single Column</h2>
             <ul>
                 <li>Single column is the basic layout that most webpages use. The text goes straight across the screen from left to right
                     and is the simplist design to employ</li>
             </ul>
-        </li>
-        <li>Multi Column
+        </div>
+        <div id="term10">
+        <h2>Multi Column</h2>
             <ul>
                 <li>Often used by newspapers and brochures a multi column layout is great for breaking up a ton of short bits of 
                     information. Some of the benefits is that it will make the text look less daunting to read and make it easier
                     to scan the many headlines</li>
             </ul>
-        </li>
-    </ul>
+        </div>
     </section>
 </main>
 <footer>
     <section id="address">
-      <hr>
-      <div>
-        (210) 619-0112 |
-        Fakeemail@gmail.com
-      </div>
+          <i class="fa-solid fa-phone"></i> (210) 619-0112 |
+          <i class="fa-solid fa-envelope"></i> Fake_email@gmail.com |
+          <i class="fa-brands fa-twitter"></i> @fake-twitter-handle
     </section>
-  </footer>
-  </body>
-  </html>
+</footer>
+</body>
+</html>
