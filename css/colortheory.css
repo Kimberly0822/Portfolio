@@ -118,7 +118,7 @@ tbody tr:nth-child(even) {
 .revival {
     float: right;
     max-width: 70%;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .astronaut {
@@ -129,4 +129,5 @@ tbody tr:nth-child(even) {
 
 .flying {
     width: 100%;
+    padding: 1rem
 }
