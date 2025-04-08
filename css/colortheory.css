@@ -67,7 +67,7 @@ div:target{
     max-height: 32rem;
     max-width: 9rem;
     position: fixed;
-    margin: 2rem -0.5rem;
+    margin: 1rem -0.5rem;
     padding: 1rem;
     overflow-y: scroll;
 }
