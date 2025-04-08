@@ -1,4 +1,4 @@
-article, aside {
+article, aside, p {
     max-width: 90%;
     margin: auto;
 }
@@ -24,7 +24,6 @@ div:not(#address) {
     flex: 3;
     padding: 1rem;
     margin: 0.5rem;
-    min-width: 200px;
 }
 
 div:target{
@@ -38,8 +37,8 @@ div:target{
     max-height: 32rem;
     max-width: 9rem;
     position: fixed;
-    margin: 1rem -0.5rem;
-    padding: 1rem;
+    margin: 2rem -0.5rem;
+    padding: 1rem
 }
 
 #sidenav a {
@@ -65,10 +64,6 @@ div:target{
 .mala {
     float: left;
     width: 40%;
-}
-
-.text {
-    padding: 1rem;
 }
 
 aside img {

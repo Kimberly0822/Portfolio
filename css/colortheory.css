@@ -1,4 +1,4 @@
-article {
+article, p {
     max-width: 90%;
     margin: auto;
 }
@@ -21,10 +21,9 @@ h3 {
 
 div:not(#address) {
     border: 3px solid black;
-    flex: 3;
+    flex: 1;
     padding: 1rem;
     margin: 0.5rem;
-    min-width: 200px;
 }
 
 .wheel {
@@ -53,7 +52,7 @@ div:not(#address) {
     min-width: 60%;
 }
 
-#term12 {
+#term8, #term12, #term15, #term20 {
     min-width: 90%;
 }
 
@@ -68,7 +67,7 @@ div:target{
     max-height: 32rem;
     max-width: 9rem;
     position: fixed;
-    margin: 1rem -0.5rem;
+    margin: 2rem -0.5rem;
     padding: 1rem;
     overflow-y: scroll;
 }
