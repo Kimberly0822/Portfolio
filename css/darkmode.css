@@ -1,10 +1,11 @@
 body {
-    background: rgb(255, 234, 251);
+    background: rgb(76, 0, 84);
+    color: rgb(232, 232, 232);
 }
 
 main {
-    background: white;
-    border: solid black 3px;
+    background: black;
+    border: solid rgb(232, 232, 232) 3px;
     margin: 1rem auto;
     width: 60rem;
     padding: 1rem 3rem 2rem;
@@ -25,14 +26,14 @@ h1{
 }
 
 header nav {
-    background: rgb(255, 42, 251);
-    border: solid black 3px;
+    background: rgb(144, 0, 166);
+    border: solid rgb(232, 232, 232) 3px;
     margin: 0 -0.5rem;
     font-size: large;
 }
 
 header nav a {
-    color: black;
+    color: rgb(232, 232, 232);
     font-weight: bold;
 }
 
@@ -53,15 +54,15 @@ nav a {
 }
 
 header nav li:hover {
-    background: white;
+    background: rgb(76, 0, 84);
 }
 
 .contains li:hover {
-    background: rgb(255, 42, 251);
+    background: rgb(144, 0, 166);
 }
 
 nav li:hover {
-    background: rgb(255, 42, 251);
+    background: rgb(144, 0, 166);
 }
 
 nav a:active, .mode button:hover {
@@ -79,11 +80,11 @@ li.contains ul {
 }
 
 li.contains:hover ul {
-    background: white;
+    background: rgb(76, 0, 84);
     display: block;
     position: absolute;
     z-index: 100;
-    border: solid rgb(255, 42, 251) 3px;
+    border: solid rgb(144, 0, 166) 3px;
 }
 
 li.contains li {
@@ -113,65 +114,39 @@ h5 img:hover {
     transition: 60s linear;
 }
 
-.dark-mode {
-    background: rgb(108, 0, 120);
-    color: rgb(232, 232, 232);
-}
-
-.dark-mode main {
+#sidenav {
     background: black;
     border: solid rgb(232, 232, 232) 3px;
+    max-height: 32rem;
+    max-width: 9rem;
+    position: fixed;
+    margin: 1rem -0.5rem;
+    padding: 1rem;
+    overflow-y: scroll;
 }
 
-.dark-mode header nav {
-    border: solid rgb(232, 232, 232) 3px;
-}
-
-.dark-mode header nav a {
+#sidenav a {
     color: rgb(232, 232, 232);
-    font-weight: bold;
+    display: block;
+    padding: .3rem;
+    text-decoration: none;
 }
 
-.dark-mode .contains li:hover {
-    background: rgb(255, 42, 251);
-}
-
-.dark-mode nav li:hover {
-    background: rgb(108, 0, 120);
-}
-
-.dark-mode li.contains:hover ul {
-    background: rgb(108, 0, 120);
-}
-
-.dark-mode #sidenav {
-    background: black;
-    border: solid rgb(232, 232, 232) 3px;
-}
-
-.dark-mode #sidenav a {
-    color: rgb(232, 232, 232);
-}
-
-.dark-mode table,
+table,
 th,
 td {
+    border: solid rgb(232, 232, 232)3px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(76, 0, 84);
+}
+
+.border {
     border: solid rgb(232, 232, 232) 3px;
-}
-
-.dark-mode tbody tr:nth-child(even) {
-    background-color: rgb(108, 0, 120);
-}
-
-.dark-mode .border {
-    border: solid rgb(232, 232, 232) 3px;
-}
-
-.dark-mode .shadow, .dark-mode .showcase {
-    text-shadow: .1rem .1rem black, 
-    .2rem .2rem rgb(255, 42, 251);
-}
-
-.toggle-container {
-    cursor: pointer;
+    flex: 1;
+    padding: 1rem;
+    margin: 0.5rem;
 }
