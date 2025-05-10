@@ -7,38 +7,49 @@
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/projects.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
   <title>My Portfolio!</title>
 </head>
 <body>
 <header>
   <nav>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li class="contains"><a href="showcase.html">Showcase</a>
-        <ul>
-            <li><a href="restoration.html">Restoration</a></li>
-            <li><a href="magazine.html">Magazine</a></li>
-            <li><a href="company.html">Company Ad</a></li>
-            <li><a href="gametitle.html">Video Game Title Sceen</a></li>
-            <li><a href="psad.html">PlayStation Ad</a></li>
-            <li><a href="character.html">Character Animation</a></li>
-        </ul>
-      </li>
-      <li class="contains"><a href="color-overview.html">Color Theory</a>
-        <ul>
-          <li><a href="color-themes.html">Themes</a></li>
-          <li><a href="color-article.html">Color Theory Tips</a></li>
-        </ul>
-      </li>
-      <li class="contains"><a href="typography-overview.html">Typography</a>
-        <ul>
-          <li><a href="font-article.html">Fonts</a></li>
-          <li><a href="typography-article.html">Typography Tips</a></li>
-        </ul>
-      </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li class="contains"><a href="showcase.html">Showcase</a>
+            <ul>
+                <li><a href="restoration.html">Restoration</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="company.html">Company Ad</a></li>
+                <li><a href="gametitle.html">Video Game Title Sceen</a></li>
+                <li><a href="psad.html">PlayStation Ad</a></li>
+                <li><a href="character.html">Character Animation</a></li>
+            </ul>
+        </li>
+        <li class="contains"><a href="color-overview.html">Color Theory</a>
+            <ul>
+                <li><a href="color-themes.html">Color Themes</a></li>
+                <li><a href="color-article.html">Color Theory Tips</a></li>
+            </ul>
+        </li>
+        <li class="contains"><a href="typography-overview.html">Typography</a>
+            <ul>
+                <li><a href="font-article.html">Fonts</a></li>
+                <li><a href="typography-article.html">Typography Tips</a></li>
+            </ul>
+        </li>
+        <li class="contains"><a>Theme</a>
+            <ul>
+                <li class="mode"><a>Mode</a>
+                    <button onclick="myFunction()">Dark</button>
+                <li class="mode"><a>Font Size</a>
+                    <button id="increase">Increase</button>
+                    <button id="decrease">Decrease</button>
+                </li>
+            </ul>
+        </li>
     </ul>
-  </nav>
+</nav>
 </header>
 <main>
   <section id="welcome">

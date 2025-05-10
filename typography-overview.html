@@ -7,6 +7,7 @@
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/typography.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
   <title>My Portfolio!</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
             </li>
             <li class="contains"><a href="color-overview.html">Color Theory</a>
                 <ul>
-                    <li><a href="color-themes.html">Themes</a></li>
+                    <li><a href="color-themes.html">Color Themes</a></li>
                     <li><a href="color-article.html">Color Theory Tips</a></li>
                 </ul>
             </li>
@@ -35,6 +36,16 @@
                 <ul>
                     <li><a href="font-article.html">Fonts</a></li>
                     <li><a href="typography-article.html">Typography Tips</a></li>
+                </ul>
+            </li>
+            <li class="contains"><a>Theme</a>
+                <ul>
+                    <li class="mode"><a>Mode</a>
+                        <button onclick="myFunction()">Dark</button>
+                    <li class="mode"><a>Font Size</a>
+                        <button id="increase">Increase</button>
+                        <button id="decrease">Decrease</button>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -68,7 +79,7 @@
         typography is much more complex than most think so let's get into some basic terms that might help you on your journey</p>
     <h1>Typeface vs Font</h1>
     <section id="terms">
-        <div id="term1">
+        <div id="term1" class="border">
         <h2>Typeface</h2>
             <ul>
                 <li>As it turns out many confuse the word typeface for the word font and as it turns out I was one of those people.
@@ -77,7 +88,7 @@
             </ul>
         <img src="images/typography-pics/diff-typefaces.png" alt="Different Typefaces">
         </div>
-        <div id="term2">
+        <div id="term2" class="border">
         <h2>Font</h2>
             <ul>
                 <li>So now we have a bit of a dilemma. If font isn't what we thought it was, what exactly is font? To put it simply, font
@@ -89,7 +100,7 @@
     </section>
     <h1>The Different Typefaces</h1>
     <section id="terms">
-        <div id="term3">
+        <div id="term3" class="border">
         <h2>Serif</h2>
             <ul>
                 <li>The serif typeface is more traditional in appearance and can be distinguished from others by small decorative lines, or
@@ -98,7 +109,7 @@
             </ul>
         <img src="images/typography-pics/serif.png" alt="Serif Typefaces">
         </div>
-        <div id="term4">
+        <div id="term4" class="border">
         <h2>Sans-Serif</h2>
             <ul>
                 <li>The sans-serif typeface is identified by its clean and unadorned look. So unlike the serif tpyefaces there are no "feet"
@@ -107,7 +118,7 @@
             </ul>
         <img src="images/typography-pics/sans-serif.png" alt="Sans-Serif Typefaces">
         </div>
-        <div id="term5">
+        <div id="term5" class="border">
         <h2>Script</h2>
             <ul>
                 <li>Script typeface tends to mimic the fluidity of calligraphy with connected characters and looping strokes. Because
@@ -116,7 +127,7 @@
             </ul>
         <img src="images/typography-pics/script.png" alt="Script Typefaces">
         </div>
-        <div id="term6">
+        <div id="term6" class="border">
         <h2>Monospaced</h2>
             <ul>
                 <li>Monospaced characters all occupy the same horizontal space. Often used in typewriters and coding these typefaces
@@ -124,7 +135,7 @@
             </ul>
         <img src="images/typography-pics/monospace.png" alt="Monospace Typefaces">
         </div>
-        <div id="term7">
+        <div id="term7" class="border">
         <h2>Handwritten</h2>
             <ul>
                 <li>Handwritten is similar to script where many have swooping lines but it often adds the slight imperfections a person's
@@ -133,7 +144,7 @@
             </ul>
         <img src="images/typography-pics/handwritten.png" alt="Handwritten Typefaces">
         </div>
-        <div id="term8">
+        <div id="term8" class="border">
         <h2>Decorative</h2>
             <ul>
                 <li>Decorative, or display typefaces, are fun eye catching typefaces that can range from playful or witty to futuristic 
@@ -145,14 +156,14 @@
     </section>
     <h1>Layout Techniques</h1>
     <section id="terms">
-        <div id="term9">
+        <div id="term9" class="border">
         <h2>Single Column</h2>
             <ul>
                 <li>Single column is the basic layout that most webpages use. The text goes straight across the screen from left to right
                     and is the simplist design to employ</li>
             </ul>
         </div>
-        <div id="term10">
+        <div id="term10" class="border">
         <h2>Multi Column</h2>
             <ul>
                 <li>Often used by newspapers and brochures a multi column layout is great for breaking up a ton of short bits of 

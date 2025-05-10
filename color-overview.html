@@ -7,6 +7,7 @@
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/colortheory.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
   <title>My Portfolio!</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
             </li>
             <li class="contains"><a href="color-overview.html">Color Theory</a>
                 <ul>
-                    <li><a href="color-themes.html">Themes</a></li>
+                    <li><a href="color-themes.html">Color Themes</a></li>
                     <li><a href="color-article.html">Color Theory Tips</a></li>
                 </ul>
             </li>
@@ -35,6 +36,16 @@
                 <ul>
                     <li><a href="font-article.html">Fonts</a></li>
                     <li><a href="typography-article.html">Typography Tips</a></li>
+                </ul>
+            </li>
+            <li class="contains"><a>Theme</a>
+                <ul>
+                    <li class="mode"><a>Mode</a>
+                        <button onclick="myFunction()">Dark</button>
+                    <li class="mode"><a>Font Size</a>
+                        <button id="increase">Increase</button>
+                        <button id="decrease">Decrease</button>
+                    </li>
                 </ul>
             </li>
         </ul>
@@ -77,14 +88,14 @@
         cohesive and legiable site. To start I'll list some of the basic terms that are good to remember</p>
         <h1 class="perfect">Types of Color</h1>
         <section id="terms">
-            <div id="term1">
+            <div id="term1" class="border">
                 <h2>Color Wheel</h2>
                 <img src="images/color-theory/colorwheel.png" class="wheel" alt="Color Wheel">
                 <ul>
                     <li>The color wheel is a very important tool in color theory that helps you see the relationships between colors   
                 </ul>
             </div>
-            <div id="term2">
+            <div id="term2" class="border">
                 <h2>Primary</h2>
                 <ul>
                     <li>These are the basic colors and cannot be made by mixing
@@ -94,7 +105,7 @@
                     </li>    
                 </ul>
             </div>
-            <div id="term3">
+            <div id="term3" class="border">
                 <h2>Secondary</h2>
                 <ul>
                     <li>These colors are made by mixing together two of the primary colors
@@ -104,7 +115,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="term4">
+            <div id="term4" class="border">
                 <h2>Tertiary</h2>
                 <ul>
                     <li>These colors can be made by mixing a primary color with a secondary color
@@ -114,7 +125,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="term5">
+            <div id="term5" class="border">
                 <h2>Quanternary</h2>
                 <ul>
                     <li>Quanternary colors are made when you mix two tertiary colors together
@@ -125,7 +136,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="term6">
+            <div id="term6" class="border">
                 <h2>Cool</h2>
                 <ul>
                     <li>These colors often give a peaceful or soothing vibe when used in a project
@@ -136,7 +147,7 @@
                 </ul>
                 <img src="images/color-theory/cool.png" class="palette" alt="Cool Colors">
             </div>
-            <div id="term7">
+            <div id="term7" class="border">
                 <h2>Warm</h2>
                 <ul>
                     <li>Warm colors often give energy and excitment to a project
@@ -147,7 +158,7 @@
                 </ul>
                 <img src="images/color-theory/warm.png" class="palette" alt="Warm Colors">
             </div>
-            <div id="term8">
+            <div id="term8" class="border">
                 <h2>Neutral</h2>
                 <ul>
                     <li>Neutral colors are often thought of as the abscence of color like white or gray but some will have the faintest bit of color to
@@ -158,7 +169,7 @@
         </section>
         <h1>Changing Color</h1>
         <section id="terms">
-        <div id="term9">
+        <div id="term9" class="border">
             <h2>Hue</h2>
             <ul>
                 <li>Hue refers to the specific color family of the color that we're looking at. Bascially the origin, or underlying, color which will usually be one of the primary
@@ -169,21 +180,21 @@
                 </li>
             </ul>
         </div>
-        <div id="term10">
+        <div id="term10" class="border">
             <h2>Shades</h2>
             <ul>
                 <li>Shades are made by mixing a hue with black to get those darker colors</li>
             </ul>
             <img src="images/color-theory/shades.png" class="palette" alt="Shades">
         </div>
-        <div id="term11">
+        <div id="term11" class="border">
             <h2>Tints</h2>
             <ul>
                 <li>Tints are created by mixing a hue with white which will give you those lighter more pastel colors</li>
             </ul>
             <img src="images/color-theory/tints.png" class="palette" alt="Tints">
         </div>
-        <div id="term12">
+        <div id="term12" class="border">
             <h2>Tones</h2>
             <ul>
                 <li>Tones are made by mixing together a hue with gray which can give you that middle ground between a shade and tint which make the colors look more dull and
@@ -191,19 +202,19 @@
             </ul>
             <img src="images/color-theory/tones.png" class="bigpalette" alt="Tones">
         </div>
-        <div id="term13">
+        <div id="term13" class="border">
             <h2>Saturation</h2>
             <ul>
                 <li>The intensity or purity of a hue. In other words, it measures how vivid, deep, or vibrant a color is. A highly saturated color appears rich and bold, while
                 less saturation may make them appear washed out or dull</li>
             </ul>
         </div>
-        <div id="term14">
+        <div id="term14" class="border">
             <h2>Value</h2>
             <li>Refers to the lightness or darkness of a color and defines a color in terms of how close it is to white or black</p>
             <li>The higher the value the closer the color gets to white and the lower the value the closer it is to black</p>
         </div>
-        <div id="term15">
+        <div id="term15" class="border">
             <h2>Contrast</h2>
             <li>Contrast really just means the difference of something and when used in color theory, the differences in the hues used. Contrast is great for drawing the
                 viewers eye to a specific point</li>
@@ -213,34 +224,34 @@
         </section>
         <h1>Color Schemes</h1>
         <section id="terms">
-        <div id="term16">
+        <div id="term16" class="border">
             <h2>Complementary</h2>
             <img src="images/color-theory/complementary.png" class="wheel" alt="Complementary Scheme">
             <li>Colors that are opposite on the color wheel. This scheme is usually used by picking a dominant color and an accent color but using both equally works as
                 well. You can also add neutrals to increase the variety</li>
             <li>Ex: Blue and Orange, Green and Red, Red-Purple and Yellow-Green</li>
         </div>
-        <div id="term17">
+        <div id="term17" class="border">
             <h2 class="center">Triadic</h2>
             <img src="images/color-theory/triadic.png" class="wheel" alt="Triadic Scheme">
             <li>Triadic colors are evenly spaced apart on the color wheel. This scheme tends to choose one dominant and then the other two are accents</li>
             <li>Ex: Purple, Green, Orange or Blue-Purple, Yellow-Green, Red-Orange</li>
         </div>
-        <div id="term18">
+        <div id="term18" class="border">
             <h2>Split</h2>
             <img src="images/color-theory/split.png" class="wheel" alt="Split Scheme">
             <li>A split scheme chooses the base color and then uses the two colors to the side of the color opposite from the base. Like with triadic this scheme uses the
                 base color choosen as the dominant and then the other two as accents</li>
             <li>Ex: Purple as the base and Yellow-Green and Yellow-Orange as accents or Blue-Green as the base and Red and Orange as accents</li>
         </div>
-        <div id="term19">
+        <div id="term19" class="border">
             <h2>Analogous</h2>
             <img src="images/color-theory/analogous.png" class="wheel" alt="Analogous Scheme">
             <li>This scheme uses colors that share the same space on the wheel. So colors that are right next to each other. Using this kind of scheme gives a very monotone
                 feeling from the lack of contrast and is easy to apply since the colors match</li>
             <li>Ex: Blue, Blue-Green, Green or Red-Orange, Red, Red-Purple</li>
         </div>
-        <div id="term20">
+        <div id="term20" class="border">
             <h2>Monochromatic</h2>
             <li>Monochromatic uses one color with its various shade, tone, and tint counter parts to create a scheme. One might even add full black or white to add some
                 depth</li>

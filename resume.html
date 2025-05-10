@@ -7,6 +7,8 @@
     <link href="css/fonts.css" rel="stylesheet">
     <link href="css/resume.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/resume.js"></script>
     <title>My Portfolio!</title>
 </head>
 <body>
@@ -27,7 +29,7 @@
             </li>
             <li class="contains"><a href="color-overview.html">Color Theory</a>
                 <ul>
-                    <li><a href="color-themes.html">Themes</a></li>
+                    <li><a href="color-themes.html">Color Themes</a></li>
                     <li><a href="color-article.html">Color Theory Tips</a></li>
                 </ul>
             </li>
@@ -37,64 +39,94 @@
                     <li><a href="typography-article.html">Typography Tips</a></li>
                 </ul>
             </li>
+            <li class="contains"><a>Theme</a>
+                <ul>
+                    <li class="mode"><a>Mode</a>
+                        <button onclick="myFunction()">Dark</button>
+                    <li class="mode"><a>Font Size</a>
+                        <button id="increase">Increase</button>
+                        <button id="decrease">Decrease</button>
+                    </li>
+                </ul>
+            </li>
         </ul>
-    </nav>
 </header>
 <main>
     <h5 class="quaylike">My Resume</h5>
     <section id="resume">
     <section id="picture" class="box">
-        <img src="images/businesswoman.jpg" alt="Business Woman" width="90%">
-    </section>
-    <section id="contact" class="box">
-        <h3>Contact</h3>
-        <p><i class="fa-solid fa-phone"></i> (210) 619-0112</p>
-        <p><i class="fa-solid fa-envelope"></i> Fake_email@gmail.com</p>
-        <p><i class="fa-brands fa-twitter"></i> @fake-twitter-account</p>
-    </section>
-    <section id="skills" class="box">
-        <h3>Skills</h3>
-        <ul>
-            <li>Photoshop</li>
-            <li>Animate</li>
-            <li>Word</li>
-            <li>Visual Studio Code</li>
-            <li>Video Editors</li>
-        </ul>
-    </section>
-    <section id="education" class="box">
-        <h3>Education</h3>
-        <h4>Highschool Diploma</h4>
-        <p>John Paul Stevens 2009-2013</p>
-        <h4>Associates in Liberal Arts</h4>
-        <p>Northwest Vista Community College</p>
+        <img src="images/businesswoman.jpg" alt="Business Woman" width="100%">
     </section>
     <section id="name" class="box">
-    <h1>Kimberly Baribault</h1>
-    <h2 class="profession">Web Developer</h2>
+        <h1>Kimberly Baribault</h1>
+        <h2 class="profession">Web Developer</h2>
+        <img src="images/resume-dec.png" alt="Resume Decoration" width="100%">
+    </section>
+    <section id="contact" class="box">
+        <div class="subject">
+            <h3>Contact <i class="fa-solid fa-chevron-down chevron"></i></h3>
+        </div>
+        <div class="contents">
+            <p><i class="fa-solid fa-phone"></i> (210) 619-0112</p>
+            <p><i class="fa-solid fa-envelope"></i> Fake_email@gmail.com</p>
+            <p><i class="fa-brands fa-twitter"></i> @fake-twitter-account</p>
+        </div>
     </section>
     <section id="profile" class="box">
-        <h3>Profile</h3>
-        Novice Web Developer trying to gain experience so I can learn and grow in the field. I have an Associates in Liberal Arts
-and some experience with Photoshop, Animate, Word, Visual Studio Code, and Video Editors.
+        <div class="subject">
+            <h3>Profile <i class="fa-solid fa-chevron-down chevron"></i></h3>
+        </div>
+        <div class="contents">
+            Novice Web Developer trying to gain experience so I can learn and grow in the field. I have an Associates in Liberal Arts and some
+            experience with Photoshop, Animate, Word, Visual Studio Code, and Video Editors.
+        </div>
+    </section>
+    <section id="skills" class="box">
+        <div class="subject">
+            <h3>Skills <i class="fa-solid fa-chevron-down chevron"></i></h3>
+        </div>
+        <div class="contents">
+            <ul>
+                <li>Photoshop</li>
+                <li>Animate</li>
+                <li>Word</li>
+                <li>Visual Studio Code</li>
+                <li>Video Editors</li>
+            </ul>
+        </div>
     </section>
     <section id="work-experience" class="box">
-        <h3>Work Experience</h3>
-        <h4>Cook - Seaworld San Antonio</h4>
-        <ul>
-            <li>Set up the kitchen and prepped certain products in morning to be sure things could run smoothly and customers wouldn't
+        <div class="subject">
+            <h3>Work Experience <i class="fa-solid fa-chevron-down chevron"></i></h3>
+        </div>
+        <div class="contents">
+            <h4>Cook - Seaworld San Antonio</h4>
+            <ul>
+                <li>Set up the kitchen and prepped certain products in morning to be sure things could run smoothly and customers wouldn't
                 be waiting long for their food</li>
-            <li>Ran and kept the kitchen clean when I was the only cook on site</li>
-            <li>Stayed calm and got my job done while working on the busier days in an already fast paced enviroment</li>
-            <li>Kept the enviroment clean and organized in occordance to the safety guidelines and to not lose important equipment</li>
-        </ul>
-        <h4>Register - Seaworld San Antonio</h4>
-        <ul>
-            <li>Talked to many customers daily by answering their questions, giving directions, or helping in whatever way I was able</li>
-            <li>Would often run the store by myself on the slower days so would have to manage keeping the food stocked, taking orders,
+                <li>Ran and kept the kitchen clean when I was the only cook on site</li>
+                <li>Stayed calm and got my job done while working on the busier days in an already fast paced enviroment</li>
+                <li>Kept the enviroment clean and organized in occordance to the safety guidelines and to not lose important equipment</li>
+            </ul>
+            <h4>Register - Seaworld San Antonio</h4>
+            <ul>
+                <li>Talked to many customers daily by answering their questions, giving directions, or helping in whatever way I was able</li>
+                <li>Would often run the store by myself on the slower days so would have to manage keeping the food stocked, taking orders,
                 and checking out customers all at once</li>
-            <li>Worked long hours on the days we were short staffed</li>
-        </ul>
+                <li>Worked long hours on the days we were short staffed</li>
+            </ul>
+        </div>
+    </section>
+    <section id="education" class="box">
+        <div class="subject">
+            <h3>Education <i class="fa-solid fa-chevron-down chevron"></i></h3>
+        </div>
+        <div class="contents">
+            <h4>Highschool Diploma</h4>
+            <p>John Paul Stevens 2009-2013</p>
+            <h4>Associates in Liberal Arts</h4>
+            <p>Northwest Vista Community College</p>
+        </div>
     </section>
     </section>
 </main>

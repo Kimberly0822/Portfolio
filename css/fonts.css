@@ -26,24 +26,23 @@
 .shadow {
   font-family: khiarascript;
   font-size: 6rem;
-  color: black;
   text-shadow: .1rem .1rem rgb(255, 222, 248), 
-  .2rem .2rem rgb(255, 99, 252);
-  padding: 1rem 2rem 1rem;
+  .2rem .2rem rgb(231, 87, 216);
+  margin: 2rem auto 1rem;
 }
 
 .showcase {
   font-family: khiarascript;
   font-size: 6.5rem;
-  color: black;
   text-shadow: .1rem .1rem rgb(255, 222, 248), 
-  .2rem .2rem rgb(255, 99, 252);
-  padding: 2rem 2rem 0;
+  .2rem .2rem rgb(231, 87, 216);
+  margin: 2rem auto 0;
 }
 
 .quaylike {
     font-family: quaylike;
     font-size: 3.5rem;
+    margin: 0 auto 1rem;
 }
 
 .breathing {
