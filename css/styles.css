@@ -113,6 +113,16 @@ h5 img:hover {
     transition: 60s linear;
 }
 
+div .fa-sun {
+    display: none;
+}
+
+div .fa-moon {
+    display: inline;
+    margin: .4rem 1.4rem;
+    font-size: 3rem;
+}
+
 .dark-mode {
     background: rgb(108, 0, 120);
     color: rgb(232, 232, 232);
@@ -172,6 +182,17 @@ td {
     .2rem .2rem rgb(248, 0, 244);
 }
 
+.dark-mode .fa-sun {
+    display: inline;
+    margin: .5rem 1rem;
+    font-size: 3rem;
+}
+
+.dark-mode .fa-moon {
+    display: none;
+}
+
 .toggle-container {
     cursor: pointer;
 }
+
