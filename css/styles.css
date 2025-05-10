@@ -25,7 +25,7 @@ h1{
 }
 
 header nav {
-    background: rgb(255, 42, 251);
+    background: rgb(248, 0, 244);
     border: solid black 3px;
     margin: 0 -0.5rem;
     font-size: large;
@@ -57,11 +57,11 @@ header nav li:hover {
 }
 
 .contains li:hover {
-    background: rgb(255, 42, 251);
+    background: rgb(248, 0, 244);
 }
 
 nav li:hover {
-    background: rgb(255, 42, 251);
+    background: rgb(248, 0, 244);
 }
 
 nav a:active, .mode button:hover {
@@ -83,7 +83,7 @@ li.contains:hover ul {
     display: block;
     position: absolute;
     z-index: 100;
-    border: solid rgb(255, 42, 251) 3px;
+    border: solid rgb(248, 0, 244) 3px;
 }
 
 li.contains li {
@@ -133,7 +133,7 @@ h5 img:hover {
 }
 
 .dark-mode .contains li:hover {
-    background: rgb(255, 42, 251);
+    background: rgb(248, 0, 244);
 }
 
 .dark-mode nav li:hover {
@@ -169,7 +169,7 @@ td {
 
 .dark-mode .shadow, .dark-mode .showcase {
     text-shadow: .1rem .1rem black, 
-    .2rem .2rem rgb(255, 42, 251);
+    .2rem .2rem rgb(248, 0, 244);
 }
 
 .toggle-container {
