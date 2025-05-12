@@ -123,6 +123,11 @@ div .fa-moon {
     font-size: 3rem;
 }
 
+.toggle-container {
+    cursor: pointer;
+}
+
+/* Dark mode styles */
 .dark-mode {
     background: rgb(108, 0, 120);
     color: rgb(232, 232, 232);
@@ -191,8 +196,3 @@ td {
 .dark-mode .fa-moon {
     display: none;
 }
-
-.toggle-container {
-    cursor: pointer;
-}
-

@@ -1,8 +1,10 @@
+/* Dark mode function */
 function myFunction() {
     const element = document.body;
     element.classList.toggle("dark-mode");
 }
 
+/* Font size */
 function changeFontSize(elem, change) {
     const curFontSize = parseInt(getComputedStyle(elem).fontSize);
 
