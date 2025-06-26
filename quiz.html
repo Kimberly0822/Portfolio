@@ -6,6 +6,7 @@
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
   <link href="css/projects.css" rel="stylesheet">
+  <link href="css/quiz.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
   <script src="javascript/script.js"></script>
   <title>My Portfolio!</title>
@@ -49,33 +50,24 @@
                 </li>
             </ul>
         </li>
+        <li><a href="quiz.html">Quiz</a></li>
     </ul>
   </nav>
 </header>
 <main>
-  <h5 class="project">My Projects!</h5>
-  <section>
-  <div>
-    <img src="videos/web-ad.gif" class="center" alt="PlayStation Ad">
-  </div>
-  <div class="notes">
-    <h2>Notes</h2>
-    <p class="left">This project I had to make a web ad. I struggled on what exactly to do then remembered the old ads video game companies had that would rotate through game covers to show what they're selling and entice you to buy it. So figured why not make one for Playstation Plus</p>
-    <ul>
-      <li>Fluid Brush Tool, Gradient Tool, and Object Drawing Mode
-        <ul>
-          <li>With the help of these I was able to make the Playstation Plus logo. I drew out the symbol then went into object drawing mode to make sure the lines looked how I wanted. Then with the help og the gradient tool I made a custom color to give that kinda shine and shadowed look to it</li>
-        </ul>
-      </li>
-      <li>Motion Tween
-        <ul>
-          <li>The motion tween let me create the spinning effect of the video game covers. This took me quite some time to do because the way layers work once the front games reached the back they'd still be layering over top the new front covers. In order to fix this I had to create two different layers for each cover. One for when it was in the front and another for when it was in the back and and then have them line up perfectly once the layer switched so it'd look seamless</li>
-        </ul>
-      </li>
-      <li><a href="quiz.html">Quiz</a></li>
-    </ul>
-  </div>
-  </section>
+    <div>
+        <h1>DnD 5e Quiz</h1>
+        <form id="quiz-form"></form>
+        <button id="submit" onclick="submitQuiz()">Submit Quiz</button>
+        <div id="results-container" style="display: none;">
+            <h2>Results</h2>
+            <div id="score-display"></div>
+            <div id="results"></div>
+            <button id="restart-button" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+        <p id="error-message" class="error-message" style="display: none;">Please answer all questions before submitting</p>
+    </div>
+<script src="javascript/quiz.js"></script>
 </main>
 <footer>
   <section id="address">
