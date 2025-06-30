@@ -23,6 +23,11 @@
   src: url('../fonts/feeling_passionate/Feeling\ Passionate\ Personal\ Use\ Only.ttf');
 }
 
+@font-face {
+  font-family: dnd;
+  src: url('../fonts/fantasy_magist/FANTASY\ MAGIST.otf');
+}
+
 .shadow {
   font-family: khiarascript;
   font-size: 6rem;
@@ -59,4 +64,10 @@
 .passionate {
   font-family: feelingpassionate;
   font-size: 3.5rem;
+}
+
+.dnd {
+    font-family: dnd;
+    font-size: 3.5rem;
+    margin: 1.5rem 0 1rem;
 }
