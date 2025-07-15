@@ -1,4 +1,4 @@
-body {
+.webpage {
     background: rgb(255, 234, 251);
 }
 
@@ -6,106 +6,47 @@ main {
     background: white;
     border: solid black 3px;
     margin: 1rem auto;
-    width: 60rem;
+    width: 60%;
     padding: 1rem 3rem 2rem;
 }
 
-p:not(.left) {
-    margin: auto;
-    max-width: 90%;
+.res {
+    margin: -2rem;
 }
 
-h5 {
-    margin: 1rem 0;
-    text-align: center;
-}
-
-h1{
-    text-align: center;
-}
-
-header nav {
-    background: rgb(248, 0, 244);
-    border: solid black 3px;
-    margin: 0 -0.5rem;
-    font-size: 1.5rem;
-}
-
-header nav a {
+nav {
     color: black;
-    font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+a:hover, .dropdown a:hover {
+    background-color: rgb(255, 171, 240);
 }
 
-header nav li {
-    float: left;
+.sidenav {
+    background: white;
+    border: solid black 3px;
+    margin-top: 1rem;
+    max-height: 80%;
+    max-width: 20%;
+    position: fixed;
+    overflow-y: scroll;
 }
 
-nav a {
-    display: block;
-    padding: 1rem;
+div:target{
+    box-shadow: 0 0 1.5rem rgb(215, 6, 201);
+    background-color: rgb(255, 237, 254);
+}
+
+.sidenav a {
+    color: black;
+    padding: .3rem;
     text-decoration: none;
 }
 
-header nav li:hover {
-    background: white;
-}
-
-.contains li:hover {
-    background: rgb(248, 0, 244);
-}
-
-nav li:hover {
-    background: rgb(248, 0, 244);
-}
-
-nav a:active, .mode button:hover {
-    color: rgb(255, 82, 194);
-}
-
-nav::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-li.contains ul {
-    display: none;
-}
-
-li.contains:hover ul {
-    background: white;
-    display: block;
-    position: absolute;
-    z-index: 100;
-    border: solid rgb(248, 0, 244) 3px;
-}
-
-li.contains li {
-    float: none;
-    font-size: smaller;
-}
-
-.mode button {
-    padding: 1rem;
-    text-decoration: none;
-    margin: 0 0 .5rem .5rem;
-    font-weight: bold;
-}
-
-.mode button:last-child {
-    margin-right: .5rem;
-}
-
+/* Flower spin */
 h5 img {
     position: relative;
-    right: 10px;
-    top: 10px;
+    right: 15px;
 }
 
 h5 img:hover {
@@ -127,9 +68,8 @@ div .fa-moon {
     cursor: pointer;
 }
 
-/* Dark mode styles */
 .dark-mode {
-    background: rgb(108, 0, 120);
+    background: rgb(74, 8, 82);
     color: rgb(232, 232, 232);
 }
 
@@ -138,53 +78,17 @@ div .fa-moon {
     border: solid rgb(232, 232, 232) 3px;
 }
 
-.dark-mode header nav {
-    border: solid rgb(232, 232, 232) 3px;
+.dark-mode #quiz-form {
+    color: black;
 }
 
-.dark-mode header nav a {
-    color: rgb(232, 232, 232);
-    font-weight: bold;
-}
-
-.dark-mode .contains li:hover {
-    background: rgb(248, 0, 244);
-}
-
-.dark-mode nav li:hover {
-    background: rgb(108, 0, 120);
-}
-
-.dark-mode li.contains:hover ul {
-    background: rgb(108, 0, 120);
-}
-
-.dark-mode #sidenav {
+.dark-mode .sidenav {
     background: black;
     border: solid rgb(232, 232, 232) 3px;
 }
 
-.dark-mode #sidenav a {
+.dark-mode .sidenav a, .dark-mode h5 {
     color: rgb(232, 232, 232);
-}
-
-.dark-mode table,
-th,
-td {
-    border: solid rgb(232, 232, 232) 3px;
-}
-
-.dark-mode tbody tr:nth-child(even) {
-    background-color: rgb(108, 0, 120);
-}
-
-.dark-mode .border {
-    border: solid rgb(232, 232, 232) 3px;
-}
-
-.dark-mode .shadow, .dark-mode .showcase {
-    text-shadow: .1rem .1rem black, 
-    .2rem .2rem rgb(248, 0, 244);
 }
 
 .dark-mode .fa-sun {

@@ -28,12 +28,12 @@
   src: url('../fonts/fantasy_magist/FANTASY\ MAGIST.otf');
 }
 
-.shadow {
+.text-shadow {
   font-family: khiarascript;
   font-size: 6rem;
   text-shadow: .1rem .1rem rgb(255, 222, 248), 
   .2rem .2rem rgb(231, 87, 216);
-  margin: 2rem auto 1rem;
+  margin: 1rem auto 0;
 }
 
 .showcase {
@@ -41,7 +41,7 @@
   font-size: 6.5rem;
   text-shadow: .1rem .1rem rgb(255, 222, 248), 
   .2rem .2rem rgb(231, 87, 216);
-  margin: 2rem auto 0;
+  margin: 1rem auto -1rem;
 }
 
 .quaylike {

@@ -5,114 +5,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/fonts.css" rel="stylesheet">
-  <link href="css/colortheory.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
   <script src="javascript/script.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <title>My Portfolio!</title>
 </head>
-<body>
+<body class="webpage">
 <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li class="contains"><a href="showcase.html">Showcase</a>
-                <ul>
-                    <li><a href="restoration.html">Restoration</a></li>
-                    <li><a href="magazine.html">Magazine</a></li>
-                    <li><a href="company.html">Company Ad</a></li>
-                    <li><a href="gametitle.html">Video Game Title Sceen</a></li>
-                    <li><a href="psad.html">PlayStation Ad</a></li>
-                    <li><a href="character.html">Character Animation</a></li>
-                </ul>
-            </li>
-            <li class="contains"><a href="color-overview.html">Color Theory</a>
-                <ul>
-                    <li><a href="color-themes.html">Color Themes</a></li>
-                    <li><a href="color-article.html">Color Theory Tips</a></li>
-                </ul>
-            </li>
-            <li class="contains"><a href="typography-overview.html">Typography</a>
-                <ul>
-                    <li><a href="font-article.html">Fonts</a></li>
-                    <li><a href="typography-article.html">Typography Tips</a></li>
-                </ul>
-            </li>
-            <li class="contains"><a>Theme</a>
-                <ul>
-                    <li class="mode"><a>Mode</a>
-                        <div class="toggle-container" onclick="myFunction()"><i class="fa-solid fa-moon"></i></div>
-                        <div class="toggle-container" onclick="myFunction()"><i class="fa-regular fa-sun"></i></div>
-                    <li class="mode"><a>Font Size</a>
-                        <button id="increase">Increase</button>
-                        <button id="decrease">Decrease</button>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="quiz.html">Quiz</a></li>
+  <nav class="navbar navbar-expand-lg border border-dark border-3" style="background-color: rgb(232, 3, 228);">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Showcase
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="showcase.html">Welcome</a></li>
+            <li><a class="dropdown-item" href="restoration.html">Restoration</a></li>
+            <li><a class="dropdown-item" href="magazine.html">Magazine</a></li>
+            <li><a class="dropdown-item" href="company.html">Company Ad</a></li>
+            <li><a class="dropdown-item" href="gametitle.html">Video Game Title Screen</a></li>
+            <li><a class="dropdown-item" href="psad.html">PlayStation Ad</a></li>
+            <li><a class="dropdown-item" href="character.html">Character Animation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Color Theory</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="color-overview.html">Color Theory Terms</a></li>
+              <li><a class="dropdown-item" href="color-themes.html">Color Themes</a></li>
+              <li><a class="dropdown-item" href="color-article.html">Color Theory Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Typography</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="typography-overview.html">Typography Terms</a></li>
+              <li><a class="dropdown-item" href="font-article.html">Typography Fonts</a></li>
+              <li><a class="dropdown-item" href="typography-article.html">Typography Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Theme</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mode</a>
+                <div class="toggle-container" onclick="myFunction()"><i class="fa-solid fa-moon"></i></div>
+                <div class="toggle-container" onclick="myFunction()"><i class="fa-regular fa-sun"></i></div>
+              <li><a class="dropdown-item" href="#">Font Size</a>
+                <button id="increase" class="p-2 m-1 ms-3">Increase</button>
+                <button id="decrease" class="p-2 m-1 ms-3">Decrease</button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <form class="d-flex me-auto mb-2 mb-lg-0 me-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 <main>
-    <table>
-        <h5 class="passionate">My Color Themes</h1>
-        <thead>
-        <tr>
-            <th>Name</th>
-            <th>Pictures</th>
-            <th>Explanation</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Moonlight</td>
-            <td><img src="images/color-theory/moonlight.png" alt="Moonlight Theme" height="265" width="260"></td>
-            <td>This theme took inspiration from the monochromatic color scheme. All the colors are very similar so you get that monotone feeling
-                from it. But with the last three being lighter you still get a nice pop from the dark blue. I think this theme could be useful for
-                someone who wants a more calming effect to their website or a site advertising night time activities like camping or a drive-in
-                theater</td>
-        </tr>
-        <tr>
-            <td>Beach Sunset</td>
-            <td><img src="images/color-theory/beach-sunset.png" alt="Beach Sunset Theme" height="265" width="260"></td>
-            <td>For the Beach Sunset theme I tried to use the complementary scheme though it might be considered a bit of spilt as well. The blue
-                and orange are opposite each other so should work well with making the other color pop. The pale yellow I added to resemble the
-                sun and sand and to expand the color theme a bit more. Just from the name clearly these colors might work well for a website
-                promoting tropical vacations</td>
-        </tr>
-        <tr>
-            <td>Cherry Blossom</td>
-            <td><img src="images/color-theory/cherryblossom.png" alt="Cherry Blossom Theme" height="265" width="260"></td>
-            <td>I partly made this theme because I love cherry blossoms and to show off the analogous scheme. Although it could be considered a
-                bit monochromatic as well. While the pinks aren't on a basic color wheel the fact they are all near each other on a complex wheel
-                makes it analogous. For this theme I think someone who wants a more feminine look or maybe someone who sells flowers could like
-                all the pinks for their site</td>
-        </tr>
-        <tr>
-            <td>Halloween</td>
-            <td><img src="images/color-theory/halloween.png" alt="Halloween Theme" height="265" width="260"></td>
-            <td>The Halloween theme took slight influence from the <br>
-                 split scheme. While not fully accurate because the <br>
-                 purple isn't being used as the base, it still uses <br>
-                 the orange and yellow that are to the side of the <br>
-                 color opposite it. Obviously this theme would be <br>
-                 great for a website that's Halloween related. Like <br>
-                 one selling costumes or pumpkins or even promoting <br>
-                 haunted houses</td>
-        </tr>
-        <tr>
-            <td>Pastel Spring</td>
-            <td><img src="images/color-theory/pastel-spring.png" alt="Pastel Spring Theme" height="265" width="260"></td>
-            <td>For this theme I tried to make one that kinda used <br>
-                the triadic scheme. Because of the pastel approach <br>
-                I took, I had to just use a tint of red which is why <br>
-                one is pink and the white I added to expand the palette <br>
-                some. The pastel look makes me think this theme might <br>
-                work well with a website that caters to babies or <br>
-                younger kids so like a daycare service or elementary <br>
-                school</td>
-        </tr>
-        </tbody>
+  <h5 class="passionate text-center m-3">My Color Themes</h1>
+    <div class="container">
+    <table class="table table-sm table-bordered border-dark">
+      <thead class="sticky-top" style="background-color: rgb(255, 204, 236);">
+      <tr class="text-center">
+          <th>Name</th>
+          <th>Theme</th>
+          <th>Explanation</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+          <td class="p-3 align-content-center">Moonlight</td>
+          <td><img src="images/color-theory/moonlight.png" alt="Moonlight Theme" height="265" width="260"></td>
+          <td class="p-3">This theme took inspiration from the monochromatic color scheme. All the colors are very similar so you get that monotone feeling
+              from it. But with the last three being lighter you still get a nice pop from the dark blue. I think this theme could be useful for
+              someone who wants a more calming effect to their website or a site advertising night time activities like camping or a drive-in
+              theater</td>
+      </tr>
+      <tr>
+          <td class="p-3 align-content-center">Beach Sunset</td>
+          <td><img src="images/color-theory/beach-sunset.png" alt="Beach Sunset Theme" height="265" width="260"></td>
+          <td class="p-3">For the Beach Sunset theme I tried to use the complementary scheme though it might be considered a bit of spilt as well. The blue
+              and orange are opposite each other so should work well with making the other color pop. The pale yellow I added to resemble the
+              sun and sand and to expand the color theme a bit more. Just from the name clearly these colors might work well for a website
+              promoting tropical vacations</td>
+      </tr>
+      <tr>
+          <td class="p-3 align-content-center">Cherry Blossom</td>
+          <td><img src="images/color-theory/cherryblossom.png" alt="Cherry Blossom Theme" height="265" width="260"></td>
+          <td class="p-3">I partly made this theme because I love cherry blossoms and to show off the analogous scheme. Although it could be considered a
+              bit monochromatic as well. While the pinks aren't on a basic color wheel the fact they are all near each other on a complex wheel
+              makes it analogous. For this theme I think someone who wants a more feminine look or maybe someone who sells flowers could like
+              all the pinks for their site</td>
+      </tr>
+      <tr>
+          <td class="p-3 align-content-center">Halloween</td>
+          <td><img src="images/color-theory/halloween.png" alt="Halloween Theme" height="265" width="260"></td>
+          <td class="p-3">The Halloween theme took slight influence from the <br>
+               split scheme. While not fully accurate because the <br>
+               purple isn't being used as the base, it still uses <br>
+               the orange and yellow that are to the side of the <br>
+               color opposite it. Obviously this theme would be <br>
+               great for a website that's Halloween related. Like <br>
+               one selling costumes or pumpkins or even promoting <br>
+               haunted houses</td>
+      </tr>
+      <tr>
+          <td class="p-3 align-content-center">Pastel Spring</td>
+          <td><img src="images/color-theory/pastel-spring.png" alt="Pastel Spring Theme" height="265" width="260"></td>
+          <td class="p-3">For this theme I tried to make one that kinda used <br>
+              the triadic scheme. Because of the pastel approach <br>
+              I took, I had to just use a tint of red which is why <br>
+              one is pink and the white I added to expand the palette <br>
+              some. The pastel look makes me think this theme might <br>
+              work well with a website that caters to babies or <br>
+              younger kids so like a daycare service or elementary <br>
+              school</td>
+      </tr>
+      </tbody>
     </table>
+    </div>
 </main>
 <footer>
     <section id="address">
@@ -121,5 +152,7 @@
           <i class="fa-brands fa-twitter"></i> @fake-twitter-handle
     </section>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 </body>
 </html>
