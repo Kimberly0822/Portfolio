@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/projects.cs" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/924e2dc900.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <title>My Portfolio!</title>
+</head>
+<body style="background-color: rgb(255, 234, 251);">
+<header>
+  <nav class="navbar navbar-expand-lg border border-dark border-3" style="background-color: rgb(231, 21, 178);">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Showcase
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="showcase.html">Welcome</a></li>
+            <li><a class="dropdown-item" href="restoration.html">Restoration</a></li>
+            <li><a class="dropdown-item" href="magazine.html">Magazine</a></li>
+            <li><a class="dropdown-item" href="company.html">Company Ad</a></li>
+            <li><a class="dropdown-item" href="gametitle.html">Video Game Title Screen</a></li>
+            <li><a class="dropdown-item" href="psad.html">PlayStation Ad</a></li>
+            <li><a class="dropdown-item" href="character.html">Character Animation</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Color Theory</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="color-overview.html">Color Theory Terms</a></li>
+              <li><a class="dropdown-item" href="color-themes.html">Color Themes</a></li>
+              <li><a class="dropdown-item" href="color-article.html">Color Theory Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Typography</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="typography-overview.html">Typography Terms</a></li>
+              <li><a class="dropdown-item" href="font-article.html">Typography Fonts</a></li>
+              <li><a class="dropdown-item" href="typography-article.html">Typography Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="selfad.html">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Theme</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Mode</a>
+                <div class="toggle-container" onclick="myFunction()"><i class="fa-solid fa-moon"></i></div>
+                <div class="toggle-container" onclick="myFunction()"><i class="fa-regular fa-sun"></i></div>
+              <li><a class="dropdown-item" href="#">Font Size</a>
+                <button id="increase" class="p-2 m-1 ms-3">Increase</button>
+                <button id="decrease" class="p-2 m-1 ms-3">Decrease</button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz.html">Quiz</a>
+          </li>
+          <form class="d-flex me-auto mb-2 mb-lg-0 me-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</nav>
+</header>
+<main>
+  <h5 class="aboutme text-center pt-4">Calling All Clients</h5>
+  <p class="text-center pt-1">Hello! My name is Kimberly Baribault and I am a novice web developer seeking potential clients or companies to gain <br>
+    experience in this field. I have some experience in photoshop, animation, video editors, 3D modeling, bootstrap and visual studio <br>
+    code. You can see a few of my projects in the slide show below.</p>
+  <div class="container">
+    <!-- The main slideshow container -->
+    <div id="image-carousel" class="carousel slide m-auto p-4" data-bs-ride="carousel">
+        <!-- Carousel indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#image-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cardfront.png" class="d-block m-auto" alt="First Slide">
+              <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.6);">
+                <h5>A ramen resturant's business card</h5>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/ramen-ad.png" class="d-block m-auto" alt="Second Slide">
+              <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.6);">
+                <h5>A banner for the fake ramen resturant</h5>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/restoration-together.png" class="d-block m-auto" alt="Third Slide">
+              <div class="carousel-caption" style="background-color: rgba(0, 0, 0, 0.6);">
+                <h5>A picture before and after it's restoration</h5>
+              </div>
+          </div>
+        <!-- Previous button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#image-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <!-- Next button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#image-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+  <div class="pb-4" style="background-color: rgb(255, 217, 248);">
+    <div class="about">
+      <h5 class="aboutme text-center pt-4">My Story</h5>
+      <p>I wandered through life for a few years, searching for something until finally my dad mentioned Computer Programming
+        and Web Design. He used to work as one at the Cancer Therapy and Research Center and knowing what they do he thought I might be good at it
+        too. I have always loved doing puzzles and playing games like Sudoku so it seemed like a good fit. I’ll admit I was hesitant at first not
+        thinking I'd be good enough but I decided to give it a shot.</p>
+      <p>With the help of Project Quest I was able to sign up for a course at UTSA. I learned how to use Photoshop and Animate and had fun creating
+        designs for websites and animating some videos. I also learned some coding like HTML and CSS. I picked these up pretty quickly and enjoyed
+        watching a website slowly come to life. We were even taught how to use JavaScript but this is where I struggled. It was much more than what
+        I thought it'd be.</p>
+      <p>I know I still have a lot to learn but over my time of wandering I've learned many skills that could be helpful and I'd love the opportunity
+        to grow and improve. I might not have become a veterinarian but maybe I can create a site that helps vets find the info they need quicker.
+        Maybe I didn't end up studying to be a nurse but I can help troubleshoot and fix problems with their systems so they can coordinate medical
+        care easier. I enjoy helping others and this will allow me to use my passion of solving problems and using technology to help those that help
+        others.</p>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-around">
+    <h5 class="aboutme text-center">Other Heplful Skills</h5>
+    <div class="col-md-3 border border-dark border-2 shadow" style="background-color: rgb(255, 217, 248);">
+      <img src="images/planning.avif" class="img-fluid px-2 py-3" alt="Planning Meeting">
+      <h3 class="text-center">Planning and Organization</h3>
+      <p class="px-4 py-1">I am someone who loves when things are planned out and organized. It makes finding what you need and figuring out what
+        you need to do first so much easier.</p>        
+    </div>
+    <div class="col-md-3 border border-dark border-2 shadow" style="background-color: rgb(255, 217, 248);">
+      <img src="images/working-together.jpg" class="img-fluid px-2 py-3" alt="Working Together">
+      <h3 class="text-center">Working with a Team</h3>
+      <p class="px-4 py-1">I've had to work together with others in many situations from games to school projects to other jobs. I always try to get along with my
+        team members because together you can get things done.</p>
+    </div>
+    <div class="col-md-3 border border-dark border-2 shadow" style="background-color: rgb(255, 217, 248);">
+      <img src="images/recieving-feedback.webp" class="img-fluid px-2 py-3" alt="Recieving Feedback">
+      <h3 class="text-center">Recieving Feedback</h3>
+      <p class="px-4 py-1">I love when people are happy with the finished product. Along with frequent updates to them I will take any feedback and ideas from the
+        client to make sure they are satisfied with what they get.</p>
+    </div>
+  </div>
+</main>
+<footer class="pt-3">
+  <section id="address">
+        <i class="fa-solid fa-phone"></i> (210) 619-0112 |
+        <i class="fa-solid fa-envelope"></i> Fake_email@gmail.com |
+        <i class="fa-brands fa-twitter"></i> @fake-twitter-handle
+  </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+</body>
+</html>

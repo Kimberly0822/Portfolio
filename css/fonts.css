@@ -19,13 +19,18 @@
 }
 
 @font-face {
-  font-family: feelingpassionate;
-  src: url('../fonts/feeling_passionate/Feeling\ Passionate\ Personal\ Use\ Only.ttf');
+  font-family: hello;
+  src: url('../fonts/hello_valentica/Hello\ Valentina.ttf');
 }
 
 @font-face {
   font-family: dnd;
   src: url('../fonts/fantasy_magist/FANTASY\ MAGIST.otf');
+}
+
+@font-face {
+  font-family: aboutme;
+  src: url('../fonts/winter_farmhouse_4/Winter\ Farmhouse.otf');
 }
 
 .text-shadow {
@@ -61,13 +66,18 @@
   margin-top: -.5rem;
 }
 
-.passionate {
-  font-family: feelingpassionate;
-  font-size: 3.5rem;
+.hello {
+  font-family: hello;
+  font-size: 4.5rem;
 }
 
 .dnd {
     font-family: dnd;
     font-size: 3.5rem;
     margin: 1.5rem 0 1rem;
+}
+
+.aboutme {
+  font-family: aboutme;
+  font-size: 5rem;
 }
